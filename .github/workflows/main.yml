@@ -58,7 +58,6 @@ jobs:
           tag_name: ${{ env.VERSION }}
           target_commitish: main
           body_path: release.txt
-          latest: true
           token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
           files: |
            *.ipa
