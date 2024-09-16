@@ -59,6 +59,6 @@ jobs:
           target_commitish: main
           body_path: release.txt
           prerelease: false 
-          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           files: |
            *.ipa
