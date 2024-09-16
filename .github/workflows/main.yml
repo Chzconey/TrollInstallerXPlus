@@ -51,11 +51,11 @@ jobs:
           chmod +x ./build.sh
           ./build.sh
 
-      - name: Release deb and ipa
+       - name: Release ipa
         uses: softprops/action-gh-release@v1
         with:
           name: TrollInstallerX_${{ env.VERSION }}
-          tag_name: ${{ env.msT }}
+          tag_name: ${{ env.VERSION }}
           target_commitish: main
           body_path: release.txt
           latest: true
